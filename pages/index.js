@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import TweetForm from '../components/TweetForm'
 
 export default function Home() {
   return (
@@ -8,43 +9,42 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Bienvenido al visualizador de Tweets
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Busca el Tweet que quieras, pega la URL acá y verás más allá de lo que esperabas
         </p>
-
+        <TweetForm></TweetForm>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h3>Cómo ir a la cancha? &rarr;</h3>
+            <p>Expertos en vender boletos y comprar soja</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h3>Cómo ser un drag queen? &rarr;</h3>
+            <p>Consejos de Ivana the tuck</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3>Ejemplos &rarr;</h3>
+            <p>Tweets populares</p>
           </a>
 
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
-            <h3>Deploy &rarr;</h3>
+            <h3> BOO &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Esto es un falso link oucker
             </p>
           </a>
         </div>
