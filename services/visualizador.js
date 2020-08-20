@@ -7,7 +7,7 @@ function parserUrl(url){
     return ["muchacha", "politica"]
 }
 
-export default function visualizar({url}){
+export function visualizar({url}){
     const keys = parserUrl({url})
     
     return(
@@ -17,4 +17,9 @@ export default function visualizar({url}){
             </li>
         ))
     )
+}
+
+export function getTweetByUrl({url}){
+    console.log({url})
+    return "Mi derecho termina donde empieza el derecho del que termino antes que yo"
 }
