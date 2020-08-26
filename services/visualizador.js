@@ -21,5 +21,5 @@ export function visualizar({url}){
 
 export function getTweetByUrl({url}){
     console.log({url})
-    return "Mi derecho termina donde empieza el derecho del que termino antes que yo"
+    return "Mi derecho termina donde empieza el derecho del que termino antes que yo. Por la voluntad que el pueblo me confiere"
 }

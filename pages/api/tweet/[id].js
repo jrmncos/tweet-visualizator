@@ -11,13 +11,11 @@ var T = new Twit({
     strictSSL:            true,     // optional - requires SSL certificates to be valid.
   })
 
-function gotData(err, data, response){
-    console.log(data)
-}
 
 
 export default (req, res) => {
-  T.get('statuses/show', {id: req.query.id} , gotData)
-  res.statusCode = 200
-  res.json({ name: 'John Doe' })
+  return T.get('statuses/show', {id: req.query.id} , (err, data, response)=>{
+    res.statusCode = 200
+    return res.json(data)
+  } )
 }

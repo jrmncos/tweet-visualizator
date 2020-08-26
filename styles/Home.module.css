@@ -55,7 +55,11 @@
 }
 
 .logo {
-  height: 1em;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  height: 50px;
+  width: 50px;
 }
 
 @media (max-width: 600px) {
